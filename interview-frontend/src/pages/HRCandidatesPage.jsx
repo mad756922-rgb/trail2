@@ -16,7 +16,7 @@ import MetricCard from "../components/MetricCard";
 import { hrApi } from "../services/api";
 import { cn } from "../utils/utils";
 
-function SortButton({ column, label, sortKey, direction, onSort }) {
+function SortButton({ column, label, sortKey, onSort }) {
   return (
     <button
       type="button"
