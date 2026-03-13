@@ -63,6 +63,7 @@ def password_needs_upgrade(stored_password: str | None) -> bool:
     except (UnknownHashError, PasswordValueError, TypeError, ValueError):
         return True
 
+
 def create_access_token(data: dict):
     """Create signed JWT with expiry based on env configuration."""
     to_encode = data.copy()
